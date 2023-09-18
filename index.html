@@ -13,11 +13,18 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
-    
+    <style>
+        @media screen and (max-width:992px){
+            .dropdown-menu.show{
+                max-height: 60vh;
+                overflow-y: scroll;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary py-3 fixed-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-primary py-3" data-bs-theme="dark">
         <div class="container">
             <div class="row">
                 <div class="col-auto">
@@ -32,7 +39,7 @@
     </nav>
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-lg-5" style="margin-top: 100px;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-lg-1 sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand mx-3 d-flex align-items-center fs-2 fw-bolder" href="#">
                 <img src="icon-rmbg.png" alt="" width="70" height="50">big <span class="fw-lighter">city</span></a>
